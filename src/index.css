@@ -1,0 +1,69 @@
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #c0c5ce;
+}
+
+.header {
+  background: #fdfd96;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #4f5b66;
+}
+
+.navbar button {
+  background: none;
+  border: none;
+  padding: 14px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar button.active {
+  background-color: #343d46;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background-color: #444;
+}
+
+.content-wrapper {
+  background: white;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid #fdfd96;
+  box-sizing: border-box;
+}
+
+.content h2 {
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar button {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    margin: 10px;
+    padding: 15px;
+  }
+}
